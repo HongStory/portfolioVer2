@@ -224,10 +224,6 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-.tab{
-    display: none;
-}
-
 /* -------------portfolio-------------- */
 
 #portfolio{
