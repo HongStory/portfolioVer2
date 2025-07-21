@@ -464,9 +464,14 @@ nav .fa-solid{
         display: block;
     }
 
-    .services:active{
+    .services:hover .services-box{
     background: #ff004f;
     transform: translateY(-10px);
+    }
+
+    .services:hover .services-box a{
+    background: #fff;
+    color: #ff004f;
     }
     
 }
