@@ -486,7 +486,7 @@ nav .fa-solid{
     transition: background 0.5s, color 0.5s;
     }
 
-    .tab.active{
+    .tab.onActive{
     background: #fff;
     color: #ff004f;
     } 
