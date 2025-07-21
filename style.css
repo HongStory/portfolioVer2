@@ -214,12 +214,12 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 
-.services:hover{
+.services:hover .services-box{
     background: #ff004f;
     transform: translateY(-10px);
 }
 
-.services:hover a{
+.services:hover .services-box a{
     background: #fff;
     color: #ff004f;
 }
