@@ -205,13 +205,22 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
+    font-weight: 500;
     margin-top: 20px;
     display: inline-block;
+    border: #ff004f solid 1px;
+    border-radius: 6px;
+    padding: 5px;
 }
 
 .services:hover{
     background: #ff004f;
     transform: translateY(-10px);
+}
+
+.services:hover a{
+    background: #fff;
+    color: #ff004f;
 }
 
 /* -------------portfolio-------------- */
@@ -452,6 +461,18 @@ nav .fa-solid{
         color: #61b752;
         margin-top: -40px;
         display: block;
+    }
+    .services:active{
+    background: #ff004f;
+    transform: translateY(-10px);
+    }
+    .services:active a{
+    background: #fff;
+    color: #ff004f;
+    }
+    .phone{
+        text-decoration: none;
+        color: #fff;
     }
 }
 
