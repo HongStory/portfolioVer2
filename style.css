@@ -209,7 +209,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.services-list div:hover{
+.services:hover{
     background: #ff004f;
     transform: translateY(-10px);
 }
@@ -391,11 +391,11 @@ nav .fa-solid{
 
     }
     .header-text{
-        margin-top: 70%;
-        font-size: 16px;
+        margin-top: 60%;
+        font-size: 25px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 50px;
     }
     nav .fa-solid{
         display: block;
