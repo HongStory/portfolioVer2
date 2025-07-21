@@ -80,28 +80,23 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div class="services">
-                    <div class="services-box">
                         <i class="fa-solid fa-code"></i>
                         <h2>Web Design</h2>
                         <p>I create visually compelling, user-focused web experiences that merge clean code with intuitive design.</p>
                         <a href="#">Learn more</a>
-                    </div>
+                        <button class="tab">Tab</button>
                 </div>
                 <div class="services">
-                    <div class="services-box">
                         <i class="fa-solid fa-crop-simple"></i>
                         <h2>UI/UX Design</h2>
                         <p>I craft intuitive and engaging UI/UX designs that transform user needs into seamless digital experiences.</p>
                         <a href="#">Learn more</a>
-                    </div>
                 </div>
                 <div class="services">
-                    <div class="services-box">
                         <i class="fa-brands fa-app-store"></i>
                         <h2>App Design</h2>
                         <p>I design apps with intuitive interfaces and purposeful interactions that elevate everyday user experiences.</p>
                         <a href="#">Learn more</a>
-                    </div>
                 </div>
             </div>    
         </div>
@@ -216,6 +211,15 @@
                 form.reset();
             })
             .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+
+    <script>
+        const services = document.querySelector('.services');
+        const tab = document.querySelector('.tab');
+        tab.addEventListener('click', () => {
+        tab.classList.toggle('active');
+        services.classList.toggle('active');
         });
     </script>
 </body>

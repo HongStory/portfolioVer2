@@ -211,17 +211,21 @@ nav ul li a:hover::after{
     border: #ff004f solid 1px;
     border-radius: 6px;
     padding: 5px;
-    transition: background 0.5s;
+    transition: background 0.5s, color 0.5s ;
 }
 
-.services:hover .services-box{
+.services:hover{
     background: #ff004f;
     transform: translateY(-10px);
 }
 
-.services:hover .services-box a{
+.services:hover a{
     background: #fff;
     color: #ff004f;
+}
+
+.tab{
+    display: none;
 }
 
 /* -------------portfolio-------------- */
@@ -464,16 +468,37 @@ nav .fa-solid{
         display: block;
     }
 
-    .services:hover .services-box{
+    .services{
+    position: relative;
+    }
+
+    .tab{
+    display: block;    
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    border-radius: 6px;
+    background: #ff004f;
+    color: #fff;
+    transition: background 0.5s, color 0.5s;
+    }
+
+    .tab.active{
+    background: #fff;
+    color: #ff004f;
+    } 
+    .services.active{
     background: #ff004f;
     transform: translateY(-10px);
     }
 
-    .services:hover .services-box a{
+    .services.active a{
     background: #fff;
     color: #ff004f;
     }
-    
 }
 
 #msg{
