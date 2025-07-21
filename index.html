@@ -217,11 +217,9 @@
         const services = document.querySelector('.services');
 
         services.addEventListener('touchstart', () => {
-        services.classList.add('active');
+        services.classList.toggle('active');
         });
-        services.addEventListener('touchend', () => {
-        services.classList.remove('active');
-        });
+        
     </script>
 </body>
 </html>
