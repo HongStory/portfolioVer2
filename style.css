@@ -470,6 +470,12 @@ nav .fa-solid{
 
     .services{
     position: relative;
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
     }
 
     .tab{
