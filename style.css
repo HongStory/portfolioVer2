@@ -211,6 +211,7 @@ nav ul li a:hover::after{
     border: #ff004f solid 1px;
     border-radius: 6px;
     padding: 5px;
+    transition: background 0.5s;
 }
 
 .services:hover{
@@ -221,6 +222,11 @@ nav ul li a:hover::after{
 .services:hover a{
     background: #fff;
     color: #ff004f;
+}
+
+.services.active{
+    background: #ff004f;
+    transform: translateY(-10px);
 }
 
 /* -------------portfolio-------------- */
@@ -462,18 +468,7 @@ nav .fa-solid{
         margin-top: -40px;
         display: block;
     }
-    .services:active{
-    background: #ff004f;
-    transform: translateY(-10px);
-    }
-    .services:active a{
-    background: #fff;
-    color: #ff004f;
-    }
-    .phone{
-        text-decoration: none;
-        color: #fff;
-    }
+    
 }
 
 #msg{

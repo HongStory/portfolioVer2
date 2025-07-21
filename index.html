@@ -212,5 +212,14 @@
             .catch(error => console.error('Error!', error.message));
         });
     </script>
+
+    <script>
+        const services = document.querySelector('.services');
+
+        services.addEventListener('touchstart', (event) => {
+        services.classList.add('active');
+        event.target.classList.remove('active');
+        });
+    </script>
 </body>
 </html>
