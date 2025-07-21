@@ -464,7 +464,7 @@ nav .fa-solid{
         display: block;
     }
 
-    .services.active{
+    .services:active{
     background: #ff004f;
     transform: translateY(-10px);
     }
