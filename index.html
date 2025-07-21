@@ -216,9 +216,11 @@
     <script>
         const services = document.querySelector('.services');
 
-        services.addEventListener('touchstart', (event) => {
+        services.addEventListener('touchstart', () => {
         services.classList.add('active');
-        event.target.classList.remove('active');
+        });
+        services.addEventListener('touchend', () => {
+        services.classList.remove('active');
         });
     </script>
 </body>

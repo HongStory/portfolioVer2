@@ -224,11 +224,6 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-.services.active{
-    background: #ff004f;
-    transform: translateY(-10px);
-}
-
 /* -------------portfolio-------------- */
 
 #portfolio{
@@ -467,6 +462,11 @@ nav .fa-solid{
         color: #61b752;
         margin-top: -40px;
         display: block;
+    }
+
+    .services.active{
+    background: #ff004f;
+    transform: translateY(-10px);
     }
     
 }
