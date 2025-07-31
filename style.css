@@ -386,6 +386,65 @@ form .btn2{
     color: #ff004f;
 }
 
+/* ------------------circle bar------------------- */
+
+.skill{
+    width: 160px;
+    height: 160px;
+    margin: 25px auto ;
+    position: relative;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    background: #1e1e2f;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6), -8px -8px 12px rgba(255, 255, 255, 0.05);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1e1e2f;
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.4),
+                inset -5px -5px 8px rgba(255, 255, 255, 0.03),
+                1px 1px 1px rgba(255, 255, 255, 0.05),
+                -1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#number{
+    font-weight: 600;
+    color: #fff;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+
 
 /* ---------css for small screen--------- */
 nav .fa-solid{
@@ -471,3 +530,4 @@ nav .fa-solid{
         margin-top: -40px;
         display: block;
     }
+    
