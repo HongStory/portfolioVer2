@@ -523,8 +523,16 @@ nav .fa-solid{
         display: block;
     }
 
-    .skill{
-        display: none;
+    .skill {
+        width: 50vw;
+        height: 50vw;
+        max-width: 160px;
+        max-height: 160px;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
     }
 
 }
